@@ -8,7 +8,7 @@ const __dirname = import.meta.dirname
 
 const server = http.createServer((req, res) => {
 
-  const pathToResource = path.join(__dirname, 'vvv', 'index.html')
+  const pathToResource = path.join(__dirname, 'public', 'index.html')
 
   fs.readFile(pathToResource, 'utf8', (err,content) => {
     if (err){
